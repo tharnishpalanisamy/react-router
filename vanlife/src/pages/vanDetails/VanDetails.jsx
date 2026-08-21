@@ -24,7 +24,6 @@ export default function VanDetails(){
     
     return(
         <>
-            <Navbar/> 
             <div className="van-details">
                 <Link to = '/vans' >Previous</Link>  
 

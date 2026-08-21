@@ -4,7 +4,6 @@ import './Home.css'
 export default function Home(){
     return(
         <>
-            <Navbar/> 
             <section className="home-content">
                 <h1 className="home-title">
                     You got the travel plans, we got the travel Vans
@@ -18,11 +17,7 @@ export default function Home(){
                 <button className="find-van-button">Find Your Van</button>
             </section> 
 
-            <footer>
-                <p className="footer-text">
-                    &copy; 2026 #VANLIFE 
-                </p>
-            </footer>
+            
             
         </>
     )

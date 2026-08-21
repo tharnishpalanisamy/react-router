@@ -36,7 +36,6 @@ export default function Vans(){
     
     return(
         <>
-            <Navbar/> 
             <div className="vans-container">
                 {elements}
             </div>
