@@ -24,3 +24,11 @@
     margin-top: 50px;
     margin-right: 150px;
 }
+.image-item{
+    width: 100px;
+}
+
+.img-items{
+    display: flex; 
+    gap: 10px;
+}

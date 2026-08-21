@@ -9,7 +9,7 @@ export default function HostVans(){
 
     let hostVanElements = hostVans.map(van =>{ 
         return (                      
-        <NavLink to={`/host/vans/${van.id}`} className="card" key={van.id}>
+        <NavLink to={`${van.id}`} className="card" key={van.id}>
             <div className="van-img-container">
                 <img src={van.imageUrl} alt="" className="van-img" /> 
             </div> 

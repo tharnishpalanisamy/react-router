@@ -17,11 +17,12 @@ export default  function VanDetailsLayout (){
         } 
         fetchVan()
     } , [])
-    console.log(currentVan);
+    console.log( 'c' , currentVan);
     
     return(
         <> 
             <div className="van-container">
+                <NavLink to={'..'}  relative="path">Previous</NavLink>
                 <div className="basic-info">
                     <div className="img-container">
                         <img src={currentVan.imageUrl} alt="" className="img" /> 
@@ -33,15 +34,15 @@ export default  function VanDetailsLayout (){
                 </div>
 
                 <div className="van-navigation">
-                    <NavLink to={`/host/vans/${currentVan.id}`} end className={({isActive}) => isActive ? 'active-link' : ''}>Details</NavLink>
-                    <NavLink to={`/host/vans/${currentVan.id}/pricing`} 
+                    <NavLink to={`.`} end className={({isActive}) => isActive ? 'active-link' : ''}>Details</NavLink>
+                    <NavLink to={`pricing`} 
                      className={({isActive}) => isActive ? 'active-link' : ''} >Pricing</NavLink>
-                    <NavLink to={`/host/vans/${currentVan.id}/photos`}
+                    <NavLink to={`photos`}
                     className={({isActive}) => isActive ? 'active-link' : ''}
                     >Photos</NavLink>
                 </div> 
 
-                <Outlet/>
+                <Outlet context={currentVan}/>
             </div>
         </>
     )

@@ -10,14 +10,14 @@ export default function Navbar(){
             <NavLink to='/' className="brand-text">#VANLIFE</NavLink>
         </div>
         <div className="navigations"> 
-            <NavLink to='/host' 
+            <NavLink to='host' 
             className={({isActive}) => isActive ? 'nav-active nav-link' : 'nav-link'}
             >Host</NavLink>
             
-            <NavLink to='/about' className={({isActive}) => isActive ? 'nav-active nav-link' : 'nav-link'}
+            <NavLink to='about' className={({isActive}) => isActive ? 'nav-active nav-link' : 'nav-link'}
             >About</NavLink>
 
-            <NavLink to='/vans' className={({isActive}) => isActive ? 'nav-active nav-link' : 'nav-link'}
+            <NavLink to='vans' className={({isActive}) => isActive ? 'nav-active nav-link' : 'nav-link'}
             >Vans</NavLink>
 
         </div>
